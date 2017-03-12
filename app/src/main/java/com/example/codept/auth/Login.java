@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
-    private static EditText username,password;
+    private static EditText username,TXTpassword;
     private static Button btnLogin;
 
     @Override
@@ -22,14 +22,14 @@ public class Login extends AppCompatActivity {
     {
         btnLogin=(Button) findViewById(R.id.button_login);
         username=(EditText) findViewById(R.id.editText_username);
-        password=(EditText) findViewById(R.id.editText_password);
+        TXTpassword=(EditText) findViewById(R.id.editText_password);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
                 String user=username.getText().toString();
-                String pass=username.getText().toString();
+                String pass=TXTpassword.getText().toString();
 
                 if(user.equals("Admin") && pass.equals("Admin"))
                 {
